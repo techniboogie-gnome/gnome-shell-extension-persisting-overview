@@ -1,5 +1,5 @@
 { "shell-version": ["3.2.1"],
   "uuid": "persisting_overview@nitehogg.org",
   "name": "Persisting Overview",
-  "url": "https://github.com/nitehogg/gnome-shell-extension-persisting-overview"
+  "url": "https://github.com/nitehogg/gnome-shell-extension-persisting-overview",
   "description": "The overview will remain active after clicking an app launcher. Nice if you habitually launch a string of apps by hand. The extension also launches each app in a new window. This was decided because with the overview persisting, the active instance of an app doesn't exactly get the focus." }

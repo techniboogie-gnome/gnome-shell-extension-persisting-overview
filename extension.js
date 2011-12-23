@@ -7,6 +7,9 @@ const Main = imports.ui.main;
 if (typeof nitehogg == "undefined") var nitehogg = {};
 
 function init() {
+    const ViewTabId = "windows";
+    const ViewSelector = Main.overview._viewSelector;
+
     nitehogg.origOnActivate = AppDisplay.AppWellIcon.prototype._onActivate;
 
     nitehogg.newOnActivate = function (event) {
@@ -25,6 +28,11 @@ function init() {
             /*} else {
                 this.app.activate();
             }*/
+        }
+
+        // Switch to Windows tab after lauching an app.
+        if (ViewSelector._activeTab != ViewTabId) {
+            ViewSelector.switchTab(ViewTabId);
         }
     };
 }
